@@ -66,6 +66,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include=".babelrc" />
+    <Content Include="app\components\helloWorld\.helloworld.scss" />
+    <Content Include="package.json" />
+    <Content Include="styles\style.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -74,7 +82,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\assets\world.jpg" />
+    <Content Include="app\components\App.js" />
+    <Content Include="app\components\helloWorld\HelloWorld.js" />
+    <Content Include="app\index.js" />
+    <Content Include="index.html" />
+    <Content Include="styles\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="styles\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
