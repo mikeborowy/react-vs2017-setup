@@ -65,10 +65,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\world.jpg" />
     <Content Include="packages.config" />
     <Content Include=".babelrc" />
     <Content Include="app\components\helloWorld\.helloworld.scss" />
     <Content Include="package.json" />
+    <Content Include="scripts\bundle.js" />
     <Content Include="styles\style.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
@@ -98,6 +100,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
