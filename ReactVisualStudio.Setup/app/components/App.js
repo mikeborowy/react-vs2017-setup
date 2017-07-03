@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import HelloWorld from './helloWorld/HelloWorld';
 
-export default class App extends Component{
+export default class App extends React.Component{
 
     render(){
         return (
-            <HelloWorld message="Hello Worlsssdsss !!!" />
+            <HelloWorld message="Hello Wolsaasdasss !!!" />
         );
     }
 } 

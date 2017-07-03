@@ -1,4 +1,4 @@
-/// <binding BeforeBuild='Run - Development' AfterBuild='Run - Development' />
+/// <binding BeforeBuild='Run - Development'/>
 "use strict";
 
 var path = require('path');

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import imgWorld from '../../assets/world.jpg'; 
 
 export default class HelloWorld extends React.Component {

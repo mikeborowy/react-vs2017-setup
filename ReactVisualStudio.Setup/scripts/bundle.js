@@ -71,9 +71,11 @@
 
 	var _react = __webpack_require__(51);
 
-	var _react2 = _interopRequireDefault(_react);
+	var React = _interopRequireWildcard(_react);
 
 	var _reactDom = __webpack_require__(101);
+
+	var ReactDOM = _interopRequireWildcard(_reactDom);
 
 	var _App = __webpack_require__(82);
 
@@ -81,10 +83,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 	console.log("init !!!"); // This component handles the App template used on every page. React ecosystem
 
 
-	(0, _reactDom.render)(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
+	ReactDOM.render(React.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -9311,7 +9315,7 @@
 
 	var _react = __webpack_require__(51);
 
-	var _react2 = _interopRequireDefault(_react);
+	var React = _interopRequireWildcard(_react);
 
 	var _HelloWorld = __webpack_require__(83);
 
@@ -9319,14 +9323,16 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var App = function (_Component) {
-	    _inherits(App, _Component);
+	var App = function (_React$Component) {
+	    _inherits(App, _React$Component);
 
 	    function App() {
 	        _classCallCheck(this, App);
@@ -9337,12 +9343,12 @@
 	    _createClass(App, [{
 	        key: 'render',
 	        value: function render() {
-	            return _react2.default.createElement(_HelloWorld2.default, { message: 'Hello Worlsssdsss !!!' });
+	            return React.createElement(_HelloWorld2.default, { message: 'Hello Wolsaasdasss !!!' });
 	        }
 	    }]);
 
 	    return App;
-	}(_react.Component);
+	}(React.Component);
 
 	exports.default = App;
 
@@ -9360,13 +9366,15 @@
 
 	var _react = __webpack_require__(51);
 
-	var _react2 = _interopRequireDefault(_react);
+	var React = _interopRequireWildcard(_react);
 
 	var _world = __webpack_require__(98);
 
 	var _world2 = _interopRequireDefault(_world);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -9388,27 +9396,27 @@
 	        value: function render() {
 	            var message = this.props.message;
 
-	            return _react2.default.createElement(
+	            return React.createElement(
 	                'div',
 	                { className: 'hello-world' },
-	                _react2.default.createElement(
+	                React.createElement(
 	                    'h1',
 	                    null,
 	                    message
 	                ),
-	                _react2.default.createElement('img', { src: _world2.default, alt: 'World' })
+	                React.createElement('img', { src: _world2.default, alt: 'World' })
 	            );
 	        }
 	    }]);
 
 	    return HelloWorld;
-	}(_react2.default.Component);
+	}(React.Component);
 
 	exports.default = HelloWorld;
 
 
 	HelloWorld.propTypes = {
-	    message: _react2.default.PropTypes.string
+	    message: React.PropTypes.string
 	};
 
 /***/ }),
